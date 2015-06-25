@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html ng-app = "pgn" ng-controller="myCtrl">
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <base href="/" target="_self">
+  <title>Phi Gamma Nu | Rush Fall 2015</title>
+  <!-- Mobile viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta description -->
+  <meta name="description" content="PGN Rush 2015">
+  <meta name="author" content="Tahmid">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./app.css" />
+  <link rel="stylesheet" href="./animate.css" />
+  <link rel="shortcut icon" href="./logo.png">
+
+
+</head>
+
+<body style="background-color:white">
+<!-- Overlay Div -->
+  <div  class="transparent"></div>
+
+<div class="seperator"></div>
+
+<header class="navbar navbar-fixed-top bg-white sf-18">
+      <div class="container"><div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="fa fa-bars fa-2x"></span>
+          </button>
+          <a href="" class="navbar-brand" ng-click="changeHead(clicked)"><span class="text-danger">Rush</span> 
+          <span ng-if="!clicked"> PGN </span> <span ng-if="clicked"> Phi Gamma Nu </span> </a>
+
+        </div>
+
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="sf-15 nav navbar-nav navbar-right">
+            <li>
+              <a href="" ng-click="setActiveTab('home')" class="top-link"><span class="text-success">Home</a>
+            </li>
+            <li>
+              <a href="" ng-click="setActiveTab('why')" class="top-link"><span class="text-warning">Why PGN</a>
+            </li>
+            <li>
+              <a href="" ng-click="setActiveTab('rushChairs')" class="top-link"><span class="text-info">Rush Chairs</a>
+            </li>
+            <li>
+              <a href="" ng-click="setActiveTab('rushEvents')" class="top-link"><span class="text-primary">Rush Events</a>
+            </li>
+            <li>
+              <a href="" ng-click="setActiveTab('rushApplication')" class="top-link"><span class="text-default">Rush Application</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+<div class="seperator"></div>
+
+<div id="landing-content no-margin no-padding">
+
+
+
+<!--START OF HOME-->
+<div class="container padding-md col-md-12 " ng-if="activeTab === 'home'">
+
+<div class="seperator"></div>
+
+<div class="seperator"></div>
+
+<div class="seperator"></div>
+
+
+
+<div class="gallery-container">
+        <div class="gallery-item slideInLeft animated">
+          <a class="image-wrapper gallery-zoom cboxElement" href="">
+            <img src="./phi.png" alt="gallery1">   
+            <div class="image-overlay">
+              <div class="image-info">
+                <div class="h3">Some picture</div>
+                <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
+              </div>
+            </div>  
+          </a><!-- /image-wrapper -->
+        </div><!-- /gallery-item -->
+        <div class="gallery-item slideInDown animated">
+                  <a class="image-wrapper gallery-zoom cboxElement" href="">
+            <img src="./b.png" alt="gallery5">
+            <div class="image-overlay">
+              <div class="image-info">
+                <div class="h3">Some picture</div>
+                <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
+              </div>
+            </div>  
+          </a><!-- /image-wrapper -->
+          </div><!-- /gallery-item -->
+        <div class="gallery-item slideInRight animated">
+          <a class="image-wrapper gallery-zoom cboxElement" href="">
+            <img src="./n.png" alt="gallery3">
+            <div class="image-overlay">
+              <div class="image-info">
+                <div class="h3">Some picture</div>
+                <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
+              </div>
+            </div>  
+          </a><!-- /image-wrapper -->
+        </div><!-- /gallery-item -->
+        <div class="gallery-item slideInLeft animated">
+          <a class="image-wrapper gallery-zoom cboxElement" href="">
+            <img src="./try4.jpg" alt="gallery4">
+            <div class="image-overlay">
+              <div class="image-info">
+                <div class="h3">Some picture</div>
+                <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
+              </div>
+            </div>  
+          </a><!-- /image-wrapper -->
+        </div><!-- /gallery-item -->
+        <div class="gallery-item slideInUp animated">
+
+          <a class="image-wrapper gallery-zoom cboxElement" href="">
+            <img src="./try.jpg" alt="gallery2">
+            <div class="image-overlay">
+              <div class="image-info">
+                <div class="h3">Some picture</div>
+                <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
+              </div>
+            </div>  
+          </a><!-- /image-wrapper -->
+        
+
+
+        </div><!-- /gallery-item -->
+        <div class="gallery-item slideInRight animated">
+          <a class="image-wrapper gallery-zoom cboxElement" href="">
+            <img src="./try6.jpg" alt="gallery6">
+            <div class="image-overlay">
+              <div class="image-info">
+                <div class="h3">Some picture</div>
+                <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
+              </div>
+            </div>  
+          </a><!-- /image-wrapper -->
+        </div><!-- /gallery-item -->
+
+      </div>
+
+        <div class="container"> <div class="seperator"></div></div>
+        <div class="container"> </div>
+<div class="bg-white text-center sf-20">
+
+        <div class="container">
+
+
+          <h3> Some sort of about us </h3>
+          <h5 class="text-muted">Some sort of subtitle</h5>
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+          <p>
+          We will have to fill this out with some sort of about us but right now i just need to waste like a lot of space so that this example makes sense and we can seee this text doing what we really want it do lololol kk tyty baii thanks a lot please know that I am not drunk right now but vodka and bacon is rreally all a man needs to live but anyway i think i have made my point this should work lets see 
+          </p>
+
+        </div>
+      </div>
+
+
+
+  </div>
+
+<!-- END OF HOME-->
+
+
+
+
+
+<!--START OF HOME-->
+<div class="container padding-md col-md-12 "  ng-if="activeTab === 'why'">
+
+<div class="seperator"></div>
+
+<div class="seperator"></div>
+
+<div class="seperator"></div>
+
+<div class="bg-white text-center sf-20">
+
+        <div class="container">
+
+
+
+<div class="image-wrapper slideInDown animated">
+                      <a class="image-wrapper image-zoom cboxElement">
+                        <img src="./allpgn.jpg" alt="Photo of Blog">
+                        <div class="image-overlay"></div> 
+                      </a>
+                    </div>
+
+
+
+          <h3> Why page </h3>
+          <h5 class="text-muted">Some sort of subtitle</h5>
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+          <p>
+          We will have to fill this out with some sort of about us but right now i just need to waste like a lot of space so that this example makes sense and we can seee this text doing what we really want it do lololol kk tyty baii thanks a lot please know that I am not drunk right now but vodka and bacon is rreally all a man needs to live but anyway i think i have made my point this should work lets see 
+          </p>
+
+        </div>
+
+
+
+      </div>
+
+
+
+  </div>
+
+<!-- END OF HOME-->
+
+
+
+
+
+<!--START OF HOME-->
+<div class="container padding-md col-md-12"   ng-if="activeTab === 'rushChairs'">
+
+<div class="seperator"></div>
+
+<div class="seperator"></div>
+
+<div class="seperator"></div>
+
+<div class="bg-white sf-15">
+
+        <div class="container">
+<h3 class="headline text-success"> <b> Meet the Rush Chairs </b> </h3>
+          <span class="line"></span>
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-wrapper  slideInLeft animated" >
+                      <a class="image-wrapper image-zoom cboxElement">
+                        <img src="./vodka.jpg" alt="Photo of Blog">
+                        <div class="image-overlay"></div> 
+                      </a>
+                    </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default  slideInRight animated">
+                  <div class="panel-body">
+
+
+                  <div class="row headline"> <b> Name:</b> That dude on locust </div><br>
+                  <div class="row headline">  <b> Major:  </b>Your mom</div><br>
+                  <div class="row headline"> "This is getting very tedious omg okay whatever some sort of detail or message" - DudeFromLocust</div>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-wrapper  slideInLeft animated" >
+                      <a class="image-wrapper image-zoom cboxElement">
+                        <img src="./vodka.jpg" alt="Photo of Blog">
+                        <div class="image-overlay"></div> 
+                      </a>
+                    </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default  slideInRight animated">
+                  <div class="panel-body">
+
+
+                  <div class="row headline"> <b> Name:</b> That dude on locust </div><br>
+                  <div class="row headline">  <b> Major:  </b>Your mom</div><br>
+                  <div class="row headline"> "This is getting very tedious omg okay whatever some sort of detail or message" - DudeFromLocust</div>
+
+
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-wrapper  slideInLeft animated" >
+                      <a class="image-wrapper image-zoom cboxElement">
+                        <img src="./vodka.jpg" alt="Photo of Blog">
+                        <div class="image-overlay"></div> 
+                      </a>
+                    </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default  slideInRight animated">
+                  <div class="panel-body">
+
+                  <div class="row headline"> <b> Name:</b> That dude on locust </div><br>
+                  <div class="row headline">  <b> Major:  </b>Your mom</div><br>
+                  <div class="row headline"> "This is getting very tedious omg okay whatever some sort of detail or message" - DudeFromLocust</div>
+
+
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-wrapper  slideInLeft animated" >
+                      <a class="image-wrapper image-zoom cboxElement">
+                        <img src="./vodka.jpg" alt="Photo of Blog">
+                        <div class="image-overlay"></div> 
+                      </a>
+                    </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default  slideInRight animated">
+                  <div class="panel-body">
+
+                  <div class="row headline"> <b> Name:</b> That dude on locust </div><br>
+                  <div class="row headline">  <b> Major:  </b>Your mom</div><br>
+                  <div class="row headline"> "This is getting very tedious omg okay whatever some sort of detail or message" - DudeFromLocust</div>
+
+
+                  </div>
+              </div>
+            </div>
+          </div>
+
+
+
+  </div> </div> </div>
+
+<!-- END OF HOME-->
+
+
+
+
+
+
+<!--START OF HOME-->
+<div class="container padding-md col-md-12"   ng-if="activeTab === 'rushEvents'">
+
+<div class="seperator"></div>
+
+<div class="seperator"></div>
+
+<div class="seperator"></div>
+
+<div class="bg-white sf-15">
+
+        <div class="container">
+
+
+          <h3 class="headline text-success"> <b> Open Rush Events </b> </h3>
+          <span class="line"></span>
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-wrapper  slideInLeft animated" >
+                      <a class="image-wrapper image-zoom cboxElement">
+                        <img src="./spider.jpg" alt="Photo of Blog">
+                        <div class="image-overlay"></div> 
+                      </a>
+                    </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default  slideInRight animated">
+                  <div class="panel-body">
+
+
+                  <div class="row headline"> <b> Time:</b>  I will try to figure out countdown if i have time</div><br>
+                  <div class="row headline">  <b> Location: Narnia </b></div><br>
+                  <div class="row headline"> Enter details of event here. Also testing this a long para to make sure it is not borken bacon bacon bacon</div>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-wrapper  slideInLeft animated" >
+                      <a class="image-wrapper image-zoom cboxElement">
+                        <img src="./spider.jpg" alt="Photo of Blog">
+                        <div class="image-overlay"></div> 
+                      </a>
+                    </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default  slideInRight animated">
+                  <div class="panel-body">
+
+
+                  <div class="row headline"> <b> Time:</b>  I will try to figure out countdown if i have time</div><br>
+                  <div class="row headline">  <b> Location: Narnia </b></div><br>
+                  <div class="row headline"> Enter details of event here. Also testing this a long para to make sure it is not borken bacon bacon bacon</div>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-wrapper  slideInLeft animated" >
+                      <a class="image-wrapper image-zoom cboxElement">
+                        <img src="./spider.jpg" alt="Photo of Blog">
+                        <div class="image-overlay"></div> 
+                      </a>
+                    </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default  slideInRight animated">
+                  <div class="panel-body">
+
+
+                  <div class="row headline"> <b> Time:</b>  I will try to figure out countdown if i have time</div><br>
+                  <div class="row headline">  <b> Location: Narnia </b></div><br>
+                  <div class="row headline"> Enter details of event here. Also testing this a long para to make sure it is not borken bacon bacon bacon</div>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+
+
+          <h3 class="headline text-danger"> <b> Closed Rush Events</b> </h3>
+          <span class="line"></span>
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="image-wrapper  slideInLeft animated" >
+                      <a class="image-wrapper image-zoom cboxElement">
+                        <img src="./spider.jpg" alt="Photo of Blog">
+                        <div class="image-overlay"></div> 
+                      </a>
+                    </div>
+            </div>
+            <div class="col-md-6">
+              <div class="panel panel-default  slideInRight animated">
+                  <div class="panel-body">
+
+
+                  <div class="row headline"> <b> Time:</b>  I will try to figure out countdown if i have time</div><br>
+                  <div class="row headline">  <b> Location: Narnia </b></div><br>
+                  <div class="row headline"> Enter details of event here. Also testing this a long para to make sure it is not borken bacon bacon bacon</div>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+  </div>
+
+<!-- END OF HOME-->
+
+
+
+
+
+
+
+
+
+<!--START OF HOME-->
+<div class="container padding-md col-md-12 "  ng-if="activeTab === 'rushApplication'">
+
+<div class="seperator"></div>
+
+<div class="seperator"></div>
+
+<div class="seperator"></div>
+
+<div class="bg-white text-center sf-20">
+
+        <div class="container">
+
+
+<div class="image-wrapper slideInDown animated">
+                      <a class="image-wrapper image-zoom cboxElement">
+                        <img src="./thanks.jpeg" alt="Photo of Blog">
+                        <div class="image-overlay"></div> 
+                      </a>
+                    </div>
+
+
+
+          <h3 class="shake animated"> Application Download Link: <a class="fa fa-dropbox"> Dropbox </a> </h3>
+          <h5 class="text-muted">Some sort of subtitle</h5>
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+          <p>
+          Thank you for taking the time to complete our rush application. Some other bs i dunno, we'll be creative and write shit here some sort of thank you note or sth 
+
+        </div>
+
+
+
+      </div>
+
+
+
+  </div>
+
+<!-- END OF HOME-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  <!-- Endless Scripts -->
+  <script src="./endless.cat.js"></script>
+  <!---->
+  <!-- Pre Angular Load -->
+  <!-- Async -->
+  <script src="./assets/libs/async.js"></script>
+  <!-- Underscore -->
+  <script src="./assets/libs/underscore-min.js"></script>
+  <!-- ANSI up -->
+  <script src="./assets/libs/ansi_up.js"></script>
+  <!-- Angular -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+  <script src="./assets/libs/angular-route.min.js"></script>
+  <script src="./assets/libs/ui-bootstrap-tpls-0.13.0.min.js"></script>
+  <script src="./assets/libs/moment.min.js"></script>
+  <script src="./assets/libs/angular-moment.min.js"></script>
+  <script src="./assets/libs/Chart.js-master/Chart.min.js"></script>
+  <script src="./assets/libs/angular-chart.js/angular-chart.min.js"></script>
+  <script src="./assets/libs/ng-infinite-scroll.min.js"></script>
+  <script src="./assets/libs/angular-xeditable-0.1.8/js/xeditable.min.js"></script>
+  <script src="./assets/libs/angular-animate.min.js"></script>
+  <script src="./assets/libs/zeroclipboard-2.2.0/ZeroClipboard.min.js"></script>
+  <script src="./assets/libs/ngClip.js"></script>
+  <script src="./assets/libs/rzslider-0.1.21/rzslider.min.js"></script>
+  <!---->
+  <!-- Post Angular Load -->
+  <!---->
+
+
+  <script src="./indexCtrl.js"></script>
+</body>
+
+</html>
