@@ -13,6 +13,5 @@
 @import 'assets/libs/angular-xeditable-0.1.8/css/xeditable.css';
 @import 'assets/libs/rzslider-0.1.21/rzslider.min.css';
 
-@import 'assets/theme/shippable/shippable.css';
-@import 'assets/theme/shippable/shippable-status.css';
+@import 'assets/theme/temp.css';
 @import './animate.css';
