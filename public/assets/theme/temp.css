@@ -1,0 +1,54 @@
+.headline {
+    margin: 0;
+}
+
+.headline .line {
+    background-color: #B7410E;
+    background-image: none;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+}
+
+.sf-05 {
+    font-size: 0.5em;
+}
+
+.sf-15 {
+    font-size: 1.5em;
+}
+
+.sf-20 {
+    font-size: 2em;
+}
+
+.sf-40 {
+    font-size: 4em;
+}
+
+.sf-60 {
+    font-size: 6em;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .temp {display:none;}
+
+}
+
+@media screen and (min-width: 1000px)  {
+
+    .temp2 {display:none;}
+
+}
+
+@media screen and (max-width: 600px)  {
+
+    .temp3 {display:none;}
+
+}
+

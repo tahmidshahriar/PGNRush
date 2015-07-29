@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app = "pgn" ng-controller="myCtrl">
+<html ng-app="pgn" ng-controller="myCtrl">
 
 <head lang="en">
   <meta charset="UTF-8">
@@ -14,559 +14,508 @@
   <link rel="stylesheet" href="./app.css" />
   <link rel="stylesheet" href="./animate.css" />
   <link rel="shortcut icon" href="./logo.png">
-
-
 </head>
 
 <body style="background-color:white">
-<!-- Overlay Div -->
-  <div  class="transparent"></div>
-
-<div class="seperator"></div>
-
-<header class="navbar navbar-fixed-top bg-white sf-18">
-      <div class="container"><div class="navbar-header">
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="fa fa-bars fa-2x"></span>
-          </button>
-          <a href="" class="navbar-brand" ng-click="changeHead(clicked)"><span class="text-danger">Rush</span> 
-          <span ng-if="!clicked"> PGN </span> <span ng-if="clicked"> Phi Gamma Nu </span> </a>
-
-        </div>
-
-        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="sf-15 nav navbar-nav navbar-right">
-            <li>
-              <a href="" ng-click="setActiveTab('home')" class="top-link"><span class="text-success">Home</a>
-            </li>
-            <li>
-              <a href="" ng-click="setActiveTab('why')" class="top-link"><span class="text-warning">Why PGN</a>
-            </li>
-            <li>
-              <a href="" ng-click="setActiveTab('rushChairs')" class="top-link"><span class="text-info">Rush Chairs</a>
-            </li>
-            <li>
-              <a href="" ng-click="setActiveTab('rushEvents')" class="top-link"><span class="text-primary">Rush Events</a>
-            </li>
-            <li>
-              <a href="" ng-click="setActiveTab('rushApplication')" class="top-link"><span class="text-default">Rush Application</a>
-            </li>
-          </ul>
-        </nav>
+  <!-- Overlay Div -->
+  <div class="transparent"></div>
+  <div class="seperator"></div>
+  <header class="navbar navbar-fixed-top bg-black" style="background-color:aliceblue">
+    <div class="container fa-lg">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="fa fa-bars fa-2x"></span>
+        </button>
+        <a href="" class="navbar-brand fa-lg" ng-click="setActiveTab('home')">Rush <span class="text-danger">PGN</span> </a>
       </div>
-    </header>
-
-
-
-<div class="seperator"></div>
-
-<div id="landing-content no-margin no-padding">
-
-
-
-<!--START OF HOME-->
-<div class="container padding-md col-md-12 " ng-if="activeTab === 'home'">
-
-<div class="seperator"></div>
-
-<div class="seperator"></div>
-
-<div class="seperator"></div>
-
-
-
-<div class="gallery-container">
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="sf-15 nav navbar-nav navbar-right">
+          <li>
+            <a href="" ng-click="setActiveTab('about')" class="top-link"><span class="text-default">| About |</span> </a>
+          </li>
+          <li>
+            <a href="" ng-click="setActiveTab('why')" class="top-link"><span class="text-default">| Why PGN |</span> </a>
+          </li>
+          <li>
+            <a href="" ng-click="setActiveTab('rushEvents')" class="top-link"><span class="text-default">| Events |</span> </a>
+          </li>
+          <li>
+            <a href="" ng-click="setActiveTab('rushApplication')" class="top-link"><span class="text-default">| Application |</span> </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="seperator"></div>
+  <div id="landing-content no-margin no-padding">
+    <!--START OF HOME-->
+    <div class="container bg-white padding-md" ng-if="activeTab === 'home'">
+      <div class="seperator"></div>
+      <div class="seperator"></div>
+      <div class="seperator"></div>
+      <div class="gallery-container ">
         <div class="gallery-item slideInLeft animated">
+          <a class="image-wrapper cboxElement" href="">
+            <img src="./phi.png" alt="gallery1">
+          </a>
+          <!-- /image-wrapper -->
+        </div>
+        <!-- /gallery-item -->
+        <div class="gallery-item animated">
           <a class="image-wrapper gallery-zoom cboxElement" href="">
-            <img src="./phi.png" alt="gallery1">   
-            <div class="image-overlay">
-              <div class="image-info">
-                <div class="h3">Some picture</div>
-                <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
-              </div>
-            </div>  
-          </a><!-- /image-wrapper -->
-        </div><!-- /gallery-item -->
-        <div class="gallery-item slideInDown animated">
-                  <a class="image-wrapper gallery-zoom cboxElement" href="">
             <img src="./b.png" alt="gallery5">
-            <div class="image-overlay">
-              <div class="image-info">
-                <div class="h3">Some picture</div>
-                <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
-              </div>
-            </div>  
-          </a><!-- /image-wrapper -->
-          </div><!-- /gallery-item -->
+          </a>
+          <!-- /image-wrapper -->
+        </div>
+        <!-- /gallery-item -->
         <div class="gallery-item slideInRight animated">
           <a class="image-wrapper gallery-zoom cboxElement" href="">
             <img src="./n.png" alt="gallery3">
-            <div class="image-overlay">
-              <div class="image-info">
-                <div class="h3">Some picture</div>
-                <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
-              </div>
-            </div>  
-          </a><!-- /image-wrapper -->
-        </div><!-- /gallery-item -->
+          </a>
+          <!-- /image-wrapper -->
+        </div>
+        <!-- /gallery-item -->
+      </div>
+      <div class="container">
+        <div class="seperator">&nbsp; &nbsp; &nbsp;</div>
+      </div>
+      <div class="container">
+        <div class="seperator">&nbsp; &nbsp; &nbsp;</div>
+      </div>
+      <div class="container"> </div>
+      <div class="bg-white text-center sf-20" style="border-style: solid;">
+        <div class="container">
+          <div class="row col-md-12">
+            <h3> <b class="fa-lg"> PHI GAMMA NU </b></h3>
+            <h5 class="text-muted " style="font-size: 90%;"><u>
+              The Delta Lambda Chapter of the University of Pennsylvania</u></h5>
+              <div class="seperator"></div>
+              <div class="seperator"></div>
+              <div>
+                <h3 class="" style="font-size: 80%;">
+                  <p>
+                    The world of business is diverse, different, dedicated. And at Phi Gamma Nu, so are we.
+                  </p>
+                  <p>
+                    Every year, PGN hosts a variety of professional events both independently and in conjunction with other professional and student-run organizations. Our reach extends beyond just business - we participate in various philanthropy events and host many social gatherings throughout the year. As the smallest of the three business fraternities on campus, we have a tight-knit brotherhood that extends to our ever-expanding alumni network. At PGN, we embrace change in the status quo.
+                  </p>
+                  <p> <u>
+                    Find your inspiration. Rush PGN.
+                  </u>
+                </p>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="seperator">&nbsp; &nbsp; &nbsp;</div>
+      </div>
+      <div class="gallery-container">
         <div class="gallery-item slideInLeft animated">
           <a class="image-wrapper gallery-zoom cboxElement" href="">
-            <img src="./try4.jpg" alt="gallery4">
+            <img src="./alum1.jpg" alt="gallery4">
             <div class="image-overlay">
               <div class="image-info">
                 <div class="h3">Some picture</div>
                 <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
               </div>
-            </div>  
-          </a><!-- /image-wrapper -->
-        </div><!-- /gallery-item -->
-        <div class="gallery-item slideInUp animated">
-
+            </div>
+          </a>
+          <!-- /image-wrapper -->
+        </div>
+        <!-- /gallery-item -->
+        <div class="gallery-item animated">
           <a class="image-wrapper gallery-zoom cboxElement" href="">
-            <img src="./try.jpg" alt="gallery2">
+            <img src="./alum3.jpg" alt="gallery2">
             <div class="image-overlay">
               <div class="image-info">
                 <div class="h3">Some picture</div>
                 <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
               </div>
-            </div>  
-          </a><!-- /image-wrapper -->
-        
-
-
-        </div><!-- /gallery-item -->
+            </div>
+          </a>
+          <!-- /image-wrapper -->
+        </div>
+        <!-- /gallery-item -->
         <div class="gallery-item slideInRight animated">
           <a class="image-wrapper gallery-zoom cboxElement" href="">
-            <img src="./try6.jpg" alt="gallery6">
+            <img src="./alum2.jpg" alt="gallery6">
             <div class="image-overlay">
               <div class="image-info">
                 <div class="h3">Some picture</div>
                 <span>Some sort of heading can go here. I feel like this is good place to mention something about the picture to make it seem more interesting? </span>
               </div>
-            </div>  
-          </a><!-- /image-wrapper -->
-        </div><!-- /gallery-item -->
-
-      </div>
-
-        <div class="container"> <div class="seperator"></div></div>
-        <div class="container"> </div>
-<div class="bg-white text-center sf-20">
-
-        <div class="container">
-
-
-          <h3> Some sort of about us </h3>
-          <h5 class="text-muted">Some sort of subtitle</h5>
-          <div class="seperator"></div>
-          <div class="seperator"></div>
-          <p>
-          We will have to fill this out with some sort of about us but right now i just need to waste like a lot of space so that this example makes sense and we can seee this text doing what we really want it do lololol kk tyty baii thanks a lot please know that I am not drunk right now but vodka and bacon is rreally all a man needs to live but anyway i think i have made my point this should work lets see 
-          </p>
-
+            </div>
+          </a>
+          <!-- /image-wrapper -->
         </div>
+        <!-- /gallery-item -->
       </div>
-
-
-
-  </div>
-
-<!-- END OF HOME-->
-
-
-
-
-
-<!--START OF HOME-->
-<div class="container padding-md col-md-12 "  ng-if="activeTab === 'why'">
-
-<div class="seperator"></div>
-
-<div class="seperator"></div>
-
-<div class="seperator"></div>
-
-<div class="bg-white text-center sf-20">
-
+    </div>
+    <!-- END OF HOME-->
+    <!--START OF HOME-->
+    <div class="container padding-md col-md-12 " ng-if="activeTab === 'why'">
+      <div class="seperator"></div>
+      <div class="seperator"></div>
+      <div class="seperator"></div>
+      <div class="bg-white text-center sf-20">
         <div class="container">
-
-
-
-<div class="image-wrapper slideInDown animated">
-                      <a class="image-wrapper image-zoom cboxElement">
-                        <img src="./allpgn.jpg" alt="Photo of Blog">
-                        <div class="image-overlay"></div> 
-                      </a>
+          <h3 class="headline text-danger text-center"> <b> So, why Phi Gamma Nu?</b> </h3>
+          <div class="seperator"></div>
+          <div class="seperator"></div>
+          <div class=" row ">
+            <div class="gallery-container">
+              <div class="gallery-item col-md-4 zoomIn animated">
+                <a class="image-wrapper gallery-zoom cboxElement" href="" style="border-style: solid;">
+                  <img src="./alum1.jpg" alt="gallery4">
+                  <div class="image-overlay">
+                    <div class="image-info">
+                      <div class="h3"> <u>Because</u></div>
+                      <span>"PGN did something for me blah blah quote" </span>
                     </div>
-
-
-
-          <h3> Why page </h3>
-          <h5 class="text-muted">Some sort of subtitle</h5>
-          <div class="seperator"></div>
-          <div class="seperator"></div>
-          <p>
-          We will have to fill this out with some sort of about us but right now i just need to waste like a lot of space so that this example makes sense and we can seee this text doing what we really want it do lololol kk tyty baii thanks a lot please know that I am not drunk right now but vodka and bacon is rreally all a man needs to live but anyway i think i have made my point this should work lets see 
-          </p>
-
+                  </div>
+                </a>
+                <!-- /image-wrapper -->
+              </div>
+              <!-- /gallery-item -->
+              <div class="gallery-item col-md-4 zoomIn animated">
+                <a class="image-wrapper gallery-zoom cboxElement" href="" style="border-style: solid;">
+                  <img src="./alum3.jpg" alt="gallery2">
+                  <div class="image-overlay">
+                    <div class="image-info">
+                      <div class="h3"> <u>Because</u></div>
+                      <span>"PGN did something for me blah blah quote" </span>
+                    </div>
+                  </div>
+                </a>
+                <!-- /image-wrapper -->
+              </div>
+              <!-- /gallery-item -->
+              <div class="gallery-item col-md-4 zoomIn animated">
+                <a class="image-wrapper gallery-zoom cboxElement" href="" style="border-style: solid;">
+                  <img src="./alum2.jpg" alt="gallery6">
+                  <div class="image-overlay">
+                    <div class="image-info">
+                      <div class="h3"> <u>Because</u></div>
+                      <span>"PGN did something for me blah blah quote" </span>
+                    </div>
+                  </div>
+                </a>
+                <!-- /image-wrapper -->
+              </div>
+              <!-- /gallery-item -->
+            </div>
+          </div>
+          <div class="row col-sm-12">
+            <br>
+          </div>
+          <div class=" row">
+            <div class="gallery-container">
+              <div class="col-md-4 gallery-item zoomIn animated">
+                <a class="image-wrapper gallery-zoom cboxElement" href="" style="border-style: solid;">
+                  <img src="./try.jpg" alt="gallery4">
+                  <div class="image-overlay">
+                    <div class="image-info">
+                      <div class="h3"> <u>Because</u></div>
+                      <span>"PGN did something for me blah blah quote" </span>
+                    </div>
+                  </div>
+                </a>
+                <!-- /image-wrapper -->
+              </div>
+              <!-- /gallery-item -->
+              <div class="col-md-4 gallery-item zoomIn animated">
+                <a class="image-wrapper gallery-zoom cboxElement" href="" style="border-style: solid;">
+                  <img src="./try2.jpg" alt="gallery2">
+                  <div class="image-overlay">
+                    <div class="image-info">
+                      <div class="h3"> <u>Because</u></div>
+                      <span>"PGN did something for me blah blah quote" </span>
+                    </div>
+                  </div>
+                </a>
+                <!-- /image-wrapper -->
+              </div>
+              <!-- /gallery-item -->
+              <div class="col-md-4 gallery-item zoomIn animated">
+                <a class="image-wrapper gallery-zoom cboxElement" href="" style="border-style: solid;">
+                  <img src="./try3.jpg" alt="gallery6">
+                  <div class="image-overlay">
+                    <div class="image-info">
+                      <div class="h3"> <u>Because</u></div>
+                      <span>"PGN did something for me blah blah quote" </span>
+                    </div>
+                  </div>
+                </a>
+                <!-- /image-wrapper -->
+              </div>
+              <!-- /gallery-item -->
+            </div>
+          </div>
+          <div class="row col-sm-12">
+            <br>
+          </div>
+          <div class=" row ">
+            <div class="gallery-container">
+              <div class="col-md-4 gallery-item zoomIn animated">
+                <a class="image-wrapper gallery-zoom cboxElement" href="" style="border-style: solid;">
+                  <img src="./try4.jpg" alt="gallery4">
+                  <div class="image-overlay">
+                    <div class="image-info">
+                      <div class="h3"> <u>Because</u></div>
+                      <span>"PGN did something for me blah blah quote" </span>
+                    </div>
+                  </div>
+                </a>
+                <!-- /image-wrapper -->
+              </div>
+              <!-- /gallery-item -->
+              <div class="col-md-4 gallery-item zoomIn animated">
+                <a class="image-wrapper gallery-zoom cboxElement" href="" style="border-style: solid;">
+                  <img src="./try5.jpg" alt="gallery2">
+                  <div class="image-overlay">
+                    <div class="image-info">
+                      <div class="h3"> <u>Because</u></div>
+                      <span>"PGN did something for me blah blah quote" </span>
+                    </div>
+                  </div>
+                </a>
+                <!-- /image-wrapper -->
+              </div>
+              <!-- /gallery-item -->
+              <div class="col-md-4 gallery-item zoomIn animated">
+                <a class="image-wrapper gallery-zoom cboxElement" href="" style="border-style: solid;">
+                  <img src="./try6.jpg" alt="gallery6">
+                  <div class="image-overlay">
+                    <div class="image-info">
+                      <div class="h3"> <u>Because</u></div>
+                      <span>"PGN did something for me blah blah quote" </span>
+                    </div>
+                  </div>
+                </a>
+                <!-- /image-wrapper -->
+              </div>
+              <!-- /gallery-item -->
+            </div>
+          </div>
         </div>
-
-
-
       </div>
-
-
-
-  </div>
-
-<!-- END OF HOME-->
-
-
-
-
-
-<!--START OF HOME-->
-<div class="container padding-md col-md-12"   ng-if="activeTab === 'rushChairs'">
-
-<div class="seperator"></div>
-
-<div class="seperator"></div>
-
-<div class="seperator"></div>
-
-<div class="bg-white sf-15">
-
+    </div>
+    <!-- END OF HOME-->
+    <!--START OF HOME-->
+    <div class="container padding-md col-md-12" ng-if="activeTab === 'rushEvents'">
+      <div class="seperator"></div>
+      <div class="seperator"></div>
+      <div class="seperator"></div>
+      <div class="bg-white sf-15">
         <div class="container">
-<h3 class="headline text-success"> <b> Meet the Rush Chairs </b> </h3>
+          <h3 class="headline text-danger text-center"> <b> Open Rush Events </b> </h3>
           <span class="line"></span>
           <div class="seperator"></div>
           <div class="seperator"></div>
-
           <div class="row">
             <div class="col-md-6">
-              <div class="image-wrapper  slideInLeft animated" >
-                      <a class="image-wrapper image-zoom cboxElement">
-                        <img src="./vodka.jpg" alt="Photo of Blog">
-                        <div class="image-overlay"></div> 
-                      </a>
-                    </div>
+              <div class="image-wrapper  slideInLeft animated">
+                <a class="image-wrapper image-zoom cboxElement">
+                  <img src="./spider.jpg" alt="Photo of Blog">
+                </a>
+              </div>
             </div>
             <div class="col-md-6">
               <div class="panel panel-default  slideInRight animated">
-                  <div class="panel-body">
-
-
-                  <div class="row headline"> <b> Name:</b> That dude on locust </div><br>
-                  <div class="row headline">  <b> Major:  </b>Your mom</div><br>
-                  <div class="row headline"> "This is getting very tedious omg okay whatever some sort of detail or message" - DudeFromLocust</div>
-
-                  </div>
+                <div class="panel-body" style="border-style: solid;">
+                  <div class="row headline"> <b> Event: </b> Meet the Brothers</div>
+                  <br>
+                  <div class="row headline"> <b> Time: </b> 31st August (Monday), 5:00 pm</div>
+                  <br>
+                  <div class="row headline"> <b> Location: </b> Huntsman Something</div>
+                  <br>
+                  <div class="row headline"> <b> Details: </b></div>
+                </div>
               </div>
             </div>
           </div>
-
           <div class="seperator"></div>
           <div class="seperator"></div>
-
           <div class="row">
             <div class="col-md-6">
-              <div class="image-wrapper  slideInLeft animated" >
-                      <a class="image-wrapper image-zoom cboxElement">
-                        <img src="./vodka.jpg" alt="Photo of Blog">
-                        <div class="image-overlay"></div> 
-                      </a>
-                    </div>
+              <div class="image-wrapper  slideInLeft animated">
+                <a class="image-wrapper image-zoom cboxElement">
+                  <img src="./spider.jpg" alt="Photo of Blog">
+                </a>
+              </div>
             </div>
             <div class="col-md-6">
               <div class="panel panel-default  slideInRight animated">
-                  <div class="panel-body">
-
-
-                  <div class="row headline"> <b> Name:</b> That dude on locust </div><br>
-                  <div class="row headline">  <b> Major:  </b>Your mom</div><br>
-                  <div class="row headline"> "This is getting very tedious omg okay whatever some sort of detail or message" - DudeFromLocust</div>
-
-
-                  </div>
+                <div class="panel-body" style="border-style: solid;">
+                  <div class="row headline"> <b> Event: </b> Internship Panel</div>
+                  <br>
+                  <div class="row headline"> <b> Time: </b> 2nd September (Wednesday), 5:00 pm</div>
+                  <br>
+                  <div class="row headline"> <b> Location: </b> Huntsman Something</div>
+                  <br>
+                  <div class="row headline"> <b> Details: </b></div>
+                </div>
               </div>
             </div>
           </div>
-
           <div class="seperator"></div>
           <div class="seperator"></div>
-
-
           <div class="row">
             <div class="col-md-6">
-              <div class="image-wrapper  slideInLeft animated" >
-                      <a class="image-wrapper image-zoom cboxElement">
-                        <img src="./vodka.jpg" alt="Photo of Blog">
-                        <div class="image-overlay"></div> 
-                      </a>
-                    </div>
+              <div class="image-wrapper  slideInLeft animated">
+                <a class="image-wrapper image-zoom cboxElement">
+                  <img src="./spider.jpg" alt="Photo of Blog">
+                </a>
+              </div>
             </div>
             <div class="col-md-6">
               <div class="panel panel-default  slideInRight animated">
-                  <div class="panel-body">
-
-                  <div class="row headline"> <b> Name:</b> That dude on locust </div><br>
-                  <div class="row headline">  <b> Major:  </b>Your mom</div><br>
-                  <div class="row headline"> "This is getting very tedious omg okay whatever some sort of detail or message" - DudeFromLocust</div>
-
-
-                  </div>
+                <div class="panel-body" style="border-style: solid;">
+                  <div class="row headline"> <b> Event: </b> Rush Party</div>
+                  <br>
+                  <div class="row headline"> <b> Time: </b> 3rd September (Thursday), 9:00 pm</div>
+                  <br>
+                  <div class="row headline"> <b> Location: </b> PGN House</div>
+                  <br>
+                  <div class="row headline"> <b> Details: </b></div>
+                </div>
               </div>
             </div>
           </div>
-
           <div class="seperator"></div>
           <div class="seperator"></div>
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="image-wrapper  slideInLeft animated" >
-                      <a class="image-wrapper image-zoom cboxElement">
-                        <img src="./vodka.jpg" alt="Photo of Blog">
-                        <div class="image-overlay"></div> 
-                      </a>
-                    </div>
-            </div>
-            <div class="col-md-6">
-              <div class="panel panel-default  slideInRight animated">
-                  <div class="panel-body">
-
-                  <div class="row headline"> <b> Name:</b> That dude on locust </div><br>
-                  <div class="row headline">  <b> Major:  </b>Your mom</div><br>
-                  <div class="row headline"> "This is getting very tedious omg okay whatever some sort of detail or message" - DudeFromLocust</div>
-
-
-                  </div>
-              </div>
-            </div>
-          </div>
-
-
-
-  </div> </div> </div>
-
-<!-- END OF HOME-->
-
-
-
-
-
-
-<!--START OF HOME-->
-<div class="container padding-md col-md-12"   ng-if="activeTab === 'rushEvents'">
-
-<div class="seperator"></div>
-
-<div class="seperator"></div>
-
-<div class="seperator"></div>
-
-<div class="bg-white sf-15">
-
-        <div class="container">
-
-
-          <h3 class="headline text-success"> <b> Open Rush Events </b> </h3>
+          <h3 class="headline text-danger text-center"> <b> Closed Rush Events</b> </h3>
           <span class="line"></span>
           <div class="seperator"></div>
           <div class="seperator"></div>
-
           <div class="row">
             <div class="col-md-6">
-              <div class="image-wrapper  slideInLeft animated" >
-                      <a class="image-wrapper image-zoom cboxElement">
-                        <img src="./spider.jpg" alt="Photo of Blog">
-                        <div class="image-overlay"></div> 
-                      </a>
-                    </div>
+              <div class="image-wrapper  slideInLeft animated">
+                <a class="image-wrapper image-zoom cboxElement">
+                  <img src="./spider.jpg" alt="Photo of Blog">
+                </a>
+              </div>
             </div>
             <div class="col-md-6">
               <div class="panel panel-default  slideInRight animated">
-                  <div class="panel-body">
-
-
-                  <div class="row headline"> <b> Time:</b>  I will try to figure out countdown if i have time</div><br>
-                  <div class="row headline">  <b> Location: Narnia </b></div><br>
-                  <div class="row headline"> Enter details of event here. Also testing this a long para to make sure it is not borken bacon bacon bacon</div>
-
-                  </div>
+                <div class="panel-body" style="border-style: solid;">
+                  <div class="row headline"> <b> Event:</b> Coming Soon </div>
+                  <br>
+                  <div class="row headline"> <b> Time:</b> Coming Soon </div>
+                  <br>
+                  <div class="row headline"> <b> Location:</b> Coming Soon </div>
+                  <br>
+                  <div class="row headline"> <b> Details: </b> Coming Soon </div>
+                </div>
               </div>
             </div>
           </div>
-
-          <div class="seperator"></div>
-          <div class="seperator"></div>
-
+        </div>
+      </div>
+    </div>
+    <!-- END OF HOME-->
+    <!--START OF HOME-->
+    <div class="container padding-md col-md-12 " ng-if="activeTab === 'rushApplication'">
+      <div class="seperator"></div>
+      <div class="seperator"></div>
+      <div class="seperator"></div>
+      <div class="bg-white sf-15  ">
+        <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <div class="image-wrapper  slideInLeft animated" >
-                      <a class="image-wrapper image-zoom cboxElement">
-                        <img src="./spider.jpg" alt="Photo of Blog">
-                        <div class="image-overlay"></div> 
-                      </a>
-                    </div>
-            </div>
-            <div class="col-md-6">
-              <div class="panel panel-default  slideInRight animated">
-                  <div class="panel-body">
+            <div class="col-md-12" style="border-style: solid;">
+              <h3 class="shake animated"> <u> Application Download Link</u>: <a class="fa fa-dropbox text-danger" href=""> Dropbox </a> </h3>
+              <div class="seperator"></div>
+              <div class="seperator"></div>
+              <div class="row headline">
+                Thank you for applying for Phi Gamma Nu's Fall Rush 2015.
+              </div>
+              <div class="row headline">
+                Please email the completed application to <span class="text-info">
 
-
-                  <div class="row headline"> <b> Time:</b>  I will try to figure out countdown if i have time</div><br>
-                  <div class="row headline">  <b> Location: Narnia </b></div><br>
-                  <div class="row headline"> Enter details of event here. Also testing this a long para to make sure it is not borken bacon bacon bacon</div>
-
-                  </div>
+                <a class="text-danger" href="mailto:pgnrush2015@gmail.com?subject=RushApplication">pgnrush2015@gmail.com </a> </span>
+              </div>
+              <div class="row headline">
+                Please note that the deadline for the application is September 4th (Friday) at midnight.
               </div>
             </div>
           </div>
-
-          <div class="seperator"></div>
-          <div class="seperator"></div>
-
-
-          <div class="row">
-            <div class="col-md-6">
-              <div class="image-wrapper  slideInLeft animated" >
-                      <a class="image-wrapper image-zoom cboxElement">
-                        <img src="./spider.jpg" alt="Photo of Blog">
-                        <div class="image-overlay"></div> 
-                      </a>
-                    </div>
-            </div>
-            <div class="col-md-6">
-              <div class="panel panel-default  slideInRight animated">
-                  <div class="panel-body">
-
-
-                  <div class="row headline"> <b> Time:</b>  I will try to figure out countdown if i have time</div><br>
-                  <div class="row headline">  <b> Location: Narnia </b></div><br>
-                  <div class="row headline"> Enter details of event here. Also testing this a long para to make sure it is not borken bacon bacon bacon</div>
-
-                  </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="seperator"></div>
-          <div class="seperator"></div>
-
-
-          <h3 class="headline text-danger"> <b> Closed Rush Events</b> </h3>
+        </div>
+      </div>
+    </div>
+    <!-- END OF HOME-->
+    <!--START OF ABOUT-->
+    <div class="container padding-md col-md-12" ng-if="activeTab === 'about'">
+      <div class="seperator"></div>
+      <div class="seperator"></div>
+      <div class="seperator"></div>
+      <div class="bg-white sf-15">
+        <div class="container">
+          <h3 class="headline text-danger text-center"> <b> Learn about Phi Gamma Nu </b> </h3>
           <span class="line"></span>
           <div class="seperator"></div>
           <div class="seperator"></div>
-
           <div class="row">
             <div class="col-md-6">
-              <div class="image-wrapper  slideInLeft animated" >
-                      <a class="image-wrapper image-zoom cboxElement">
-                        <img src="./spider.jpg" alt="Photo of Blog">
-                        <div class="image-overlay"></div> 
-                      </a>
-                    </div>
+              <div class="panel panel-default  slideInRight animated">
+                <div class="panel-body" style="border-style: solid;">
+                  <div class="row headline text-center"> <b> Topic:</b> <span class="text-danger">History </span> of PGN</div>
+                  <div class="row headline">
+                    Phi Gamma Nu was originally founded on February 17, 1924 at the Chicago campus of Northwestern University. Under the leadership of Sylvia Arnold, six devoted women initiated what was to become one of the premier business fraternities in the United States: Phi Gamma Nu. Since then, Phi Gamma Nu has grown to become a national, influential, and dedicated organization, devoted to professionalism, service, and brotherhood.
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-md-6">
               <div class="panel panel-default  slideInRight animated">
-                  <div class="panel-body">
-
-
-                  <div class="row headline"> <b> Time:</b>  I will try to figure out countdown if i have time</div><br>
-                  <div class="row headline">  <b> Location: Narnia </b></div><br>
-                  <div class="row headline"> Enter details of event here. Also testing this a long para to make sure it is not borken bacon bacon bacon</div>
-
-                  </div>
+                <div class="panel-body" style="border-style: solid;">
+                  <div class="row headline text-center"> <b> Topic:</b> <span class="text-danger">Purpose</span> of PGN </div>
+                  <div class="row headline"> Phi Gamma Nu was founded for the purpose of fostering the study of business in colleges and universities; to uphold the interest of our Alma Maters through the encouragement of high scholarship, participation in school activities, and the association of students for their mutual advancement; to promote professional competency and achievement in the field of business; and to further a high standard of commercial ethics and culture in civic and professional enterprises.</div>
+                </div>
               </div>
             </div>
           </div>
-
-        </div>
-      </div>
-
-
-
-  </div>
-
-<!-- END OF HOME-->
-
-
-
-
-
-
-
-
-
-<!--START OF HOME-->
-<div class="container padding-md col-md-12 "  ng-if="activeTab === 'rushApplication'">
-
-<div class="seperator"></div>
-
-<div class="seperator"></div>
-
-<div class="seperator"></div>
-
-<div class="bg-white text-center sf-20">
-
-        <div class="container">
-
-
-<div class="image-wrapper slideInDown animated">
-                      <a class="image-wrapper image-zoom cboxElement">
-                        <img src="./thanks.jpeg" alt="Photo of Blog">
-                        <div class="image-overlay"></div> 
-                      </a>
-                    </div>
-
-
-
-          <h3 class="shake animated"> Application Download Link: <a class="fa fa-dropbox"> Dropbox </a> </h3>
-          <h5 class="text-muted">Some sort of subtitle</h5>
           <div class="seperator"></div>
           <div class="seperator"></div>
-          <p>
-          Thank you for taking the time to complete our rush application. Some other bs i dunno, we'll be creative and write shit here some sort of thank you note or sth 
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-default  slideInRight animated">
+                <div class="panel-body" style="border-style: solid;">
+                  <div class="row headline text-center"> <b> Topic:</b> <span class="text-danger">Mission</span> of PGN</div>
+                  <div class="row headline"> Phi Gamma Nu proudly upholds Three National Pillars which represent the underlying ideals of the fraternity. As such, events and activities organized by Phi Gamma Nu brothers work to fulfill these goals in practice.</div>
+                  <br>
+                  <div class="row headline"> <b> Professionalism:</b> Through Professionalism, Phi Gamma Nu seeks to constantly spread interest in the business field throughout college campuses. To this end, the National Board promotes the chapters’ organization of creative professional events including networking workshops, mock interviews, case competitions and speaker events.</div>
+                  <div class="row headline"> <b> Philanthropy:</b> Through Philanthropy, Phi Gamma Nu chapters are able to build strong bonds with their respective communities as well. As the fraternity’s brothers believe in civic responsibility, chapters nationwide organize and participate in community outreach, volunteering at animal shelters, and soup kitchens.
+                  </div>
+                  <div class="row headline"> <b> Community:</b> Through Community, Phi Gamma Nu believes in upholding the interest of our Alma Maters through the encouragement of high scholarship, participation in school activities, and awareness of important issues and current events on and around campus. Social events give us an opportunity to strengthen these relationships with our brothers and sisters so that they last a lifetime.</div>
+                  <br>
+                  <div class="row headline">
+                    By executing these Three National Pillars, Phi Gamma Nu advances in the pursuit of its goals as a premier business fraternity. We believe that by fostering professionalism, service, and community, we can develop a group of PGN brothers well prepared for future endeavors.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF HOME-->
+  </div>
+  <div class="bg" id="footer">
+      <div class="container">
+        <div class="row">
 
         </div>
-
-
-
+        <div class="row copyright">
+          <div class="col-md-12">
+            PGN Fall Rush 2015 | Website by Tahmid Shahriar
+          </div>
+        </div>
       </div>
-
-
-
-  </div>
-
-<!-- END OF HOME-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
-
+    </div>
+  <!---->
   <!-- Endless Scripts -->
   <script src="./endless.cat.js"></script>
   <!---->
@@ -594,8 +543,6 @@
   <!---->
   <!-- Post Angular Load -->
   <!---->
-
-
   <script src="./indexCtrl.js"></script>
 </body>
 
